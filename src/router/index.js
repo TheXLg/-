@@ -1,27 +1,59 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
 Vue.use(VueRouter)
-
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
-
 const router = new VueRouter({
-  routes
-})
+    mode: 'hash',
 
+    scrollBehavior(to, from, savedPosition) {
+        // 非异步处理
+
+        // if (savedPosition) {
+        // 	return savedPosition
+        // } else {
+        // 	return {
+        // 		x: 0,
+        // 		y: 0
+        // 	}
+        // }
+
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(savedPosition || {
+                    x: 0,
+                    y: 0
+                })
+            }, 2000)
+            console.log(reject);
+        })
+    },
+    routes: [{
+            path: '/',
+            name: 'Login',
+            component: () => import('../components/Login')
+        }, {
+            path: '/table',
+            name: 'Table',
+            component: () => import('../components/Table')
+        },
+        {
+            path: '/guest',
+            name: 'Guest',
+            component: () => import('../components/Guest')
+        },
+        {
+            path: '/menu',
+            name: 'Menu',
+            component: () => import('@/components/Menu')
+        }
+    ]
+})
+//路由拦截
+router.beforeEach((to, from, next) => {
+    if (sessionStorage.getItem('memberId') || to.path == '/') {
+        next(true)
+    } else {
+        next(false)
+    }
+    console.log(from)
+})
 export default router

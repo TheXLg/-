@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* .zdiv {
+      text-align: center;
+  } */
+
+h1 {
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 44px;
+}
+
+.login {
+    width: 93%;
+    padding: 10px;
+    position: relative;
+}
+
+.ipt1 {
+    width: 100%;
+    height: 38px;
+    border: rgb(192, 192, 192) solid 1px;
+    margin-top: 10px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff;
+}
+
+.ipt1 input {
+    border: none;
+    outline: none;
+    width: 68%;
+    position: absolute;
+    top: 3px;
+    left: 85px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.ipt1>span:nth-child(1) {
+    width: 15.7%;
+    height: 38px;
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    line-height: 38px;
+}
+
+.del {
+    height: 28px;
+    width: 28px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 14px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.del::after {
+    content: "";
+    height: 24px;
+    width: 3px;
+    background-color: #fff;
+    position: absolute;
+    right: 12px;
+    top: 2px;
+    transform: rotate(45deg);
+}
+
+.del::before {
+    content: "";
+    height: 24px;
+    width: 3px;
+    background-color: #fff;
+    position: absolute;
+    right: 12px;
+    top: 2px;
+    transform: rotate(-45deg);
+}
+
+#an {
+    display: inline-block;
+    width: 58px;
+    height: 28px;
+    border-radius: 15px;
+    padding: 1px;
+    background-color: gray;
+    position: absolute;
+    right: -15px;
+}
+
+.nnn {
+    background-color: blue !important;
+}
+
+#kg {
+    /* margin-left: 40px; */
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+    background-color: rgb(193, 193, 193);
+    float: left;
+    /* right: 0px; */
+}
+
+.zzz {
+    float: right !important;
+}
+
+.login>ul> :nth-child(3) {
+    position: relative;
+    width: 95%;
+}
+
+#dbtn {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgb(57, 184, 104);
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.qdcp {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgb(57, 184, 104);
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 20px;
+    line-height: 40px;
+}

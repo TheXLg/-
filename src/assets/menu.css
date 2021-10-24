@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* .zdiv {
+    text-align: center;
+} */
+
+h1 {
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 44px;
+    position: relative;
+}
+
+.fanhui {
+
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 4px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 20px;
+    top: 11px;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.wdcd {
+    height: 30px;
+    width: 67px;
+    background-color: rgb(57, 184, 104);
+
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    line-height: 30px;
+    border-radius: 3px;
+    margin-top: 7px;
+}
+
+.cailei {
+    width: 18%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(233, 233, 233), rgb(208, 208, 208));
+
+}
+
+.cailei>li {
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 14px;
+    position: relative;
+}
+
+.bigbox {
+    height: 600px;
+    display: flex;
+}
+
+.xianshen {
+    display: block !important;
+}
+
+.flasg {
+    background-color: rgb(175, 175, 175);
+    color: white;
+}
+
+.caim {
+
+    width: 81%;
+    height: 100%;
+    position: relative;
+}
+
+.cai {
+    background-repeat: no-repeat;
+    background-image: url(img2.png);
+    background-position: 0 10px;
+    height: 80px;
+    border-bottom: 1px solid #aaa;
+    background-size: 80px 60px;
+    position: relative;
+}
+
+.jiu {
+    background-repeat: no-repeat;
+    background-image: url(./beer.jpg);
+    background-position: 0 10px;
+    height: 80px;
+    border-bottom: 1px solid #aaa;
+    background-size: 80px 60px;
+    position: relative;
+}
+
+.danjia {
+    position: absolute;
+    top: 13px;
+    left: 80px;
+}
+
+.danjia>h6:nth-child(1) {
+    font-size: 14px;
+}
+
+.danjia>h6:nth-child(2) {
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #444;
+}
+
+.danjia>h6:nth-child(3) {
+    font-weight: 400;
+    color: red;
+}
+
+.ccount {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 161, 61);
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.status {
+    position: absolute;
+    top: 37%;
+    left: 72%;
+}
+
+
+.chbox {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 26px;
+    right: 10px;
+    border: rgb(175, 175, 175) 2px solid;
+    border-radius: 15px;
+}
+
+.xgj {
+    content: "";
+    width: 16px;
+    height: 7px;
+    border: springgreen 2px solid;
+    border-top: 0;
+    border-right: 0;
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    transform: rotate(-45deg);
+
+}
+
+.jcout {
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 25px;
+}
+
+.jcout>div:nth-child(1) {
+    height: 26px;
+    width: 26px;
+    background-color: rgb(225, 227, 228);
+    border-radius: 13px;
+    color: rgb(141, 141, 141);
+    position: relative;
+}
+
+.jcout>div:nth-child(1)::after {
+    content: "";
+    width: 14px;
+    border-top: 2px solid rgb(141, 141, 141);
+    position: absolute;
+    top: 12px;
+    left: 6px;
+
+}
+
+.jcout>div:nth-child(2) {
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    line-height: 26px;
+    color: rgb(141, 141, 141);
+}
+
+.jcout>div:nth-child(3) {
+    height: 26px;
+    width: 26px;
+    background-color: rgb(225, 227, 228);
+    border-radius: 13px;
+    color: rgb(141, 141, 141);
+    position: relative;
+}
+
+.jcout>div:nth-child(3)::after {
+    content: "";
+    width: 14px;
+    border-top: 2px solid rgb(141, 141, 141);
+    position: absolute;
+    top: 12px;
+    left: 6px;
+}
+
+.jcout>div:nth-child(3)::before {
+    content: "";
+    width: 14px;
+    border-top: 2px solid rgb(141, 141, 141);
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    transform: rotate(90deg);
+}
+
+.zcot {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 161, 61);
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+.zzc2,
+.zzc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.zzc {
+
+    text-align: center;
+}
+
+.zzc>div {
+
+    margin: 150px auto;
+    height: 300px;
+    width: 240px;
+}
+
+
+.szan {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    display: block;
+    background-color: rgb(57, 184, 104);
+    color: white;
+    display: inline-block;
+    line-height: 70px;
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.cuowu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.cuowu>div {
+    width: 260px;
+    height: 170px;
+    background-color: white;
+    position: absolute;
+    top: 35%;
+    left: 14%;
+}
+
+.cuowu>div>div:nth-child(1) {
+    position: relative;
+    width: 240px;
+    height: 40px;
+    color: rgb(69, 169, 37);
+    border-bottom: 3px solid #ddd;
+    line-height: 40px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.cuowu>div>div:nth-child(1)>div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.cuowu>div>div:nth-child(1)>div::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    height: 1px;
+    width: 19px;
+    border-bottom: 3px solid #ddd;
+    transform: rotate(45deg);
+}
+
+.cuowu>div>div:nth-child(1)>div::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    height: 1px;
+    width: 19px;
+    border-bottom: 3px solid #ddd;
+    transform: rotate(-45deg)
+}
+
+.cuowu>div>div:nth-child(2) {
+    height: 50px;
+    width: 260px;
+    margin-left: 30px;
+    line-height: 50px;
+    color: #555;
+}
+
+.cuowu>div>div:nth-child(2)>span:nth-child(2) {
+    font-weight: 700;
+}
+
+.cuowu>div>div:nth-child(3) {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 240px;
+    height: 40px;
+    color: white;
+    background-color: rgb(57, 184, 104);
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.hui {
+    background-color: rgb(170, 170, 170) !important;
+}
+
+.tmycd {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    background-color: rgb(57, 184, 104);
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+
+
+}
+
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+
+}
+
+.load>img {
+    width: 100px;
+    height: 100px;
+}

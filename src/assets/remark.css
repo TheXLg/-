@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+h1 {
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 44px;
+    position: relative;
+}
+
+.fanhui {
+
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 4px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 20px;
+    top: 11px;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.hede {
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    background-color: white;
+    width: 90%;
+    border-radius: 3px;
+
+}
+
+.hede>li:nth-child(1) {
+    font-weight: 700;
+    height: 40px;
+    padding-left: 10px;
+    position: relative;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.hede>li:nth-child(1)>div {
+    height: 10px;
+    width: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    border-left: 0;
+    border-bottom: 0;
+    position: absolute;
+    right: 14px;
+    top: 17px;
+    transform: rotate(-45deg);
+}
+
+.ask {
+    height: 40px;
+    padding-left: 10px;
+    position: relative;
+    line-height: 40px;
+    font-size: 14px;
+    border-top: 1px solid rgb(240, 240, 240);
+}
+
+.ask>div {
+    height: 16px;
+    width: 16px;
+    border: 2px solid rgb(150, 150, 150);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.lvk {
+    border-color: rgb(57, 184, 104) !important;
+}
+
+.xgj2 {
+    content: "";
+    width: 14px;
+    height: 6px;
+    border: rgb(57, 184, 104) 2px solid;
+    border-top: 0;
+    border-right: 0;
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    transform: rotate(-45deg);
+}
+
+.bzwb {
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    background-color: white;
+    height: 110px;
+    width: 90%;
+    border-radius: 3px;
+}
+
+.bzwb>h5 {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+}
+
+.bzwb>textarea {
+    margin: 10px 5%;
+    border: 1px solid #ccc;
+    width: 90%;
+    height: 50px;
+    outline: medium;
+    font-size: 16px;
+}
+
+.qued {
+    margin: 20px auto;
+    width: 90%;
+    height: 40px;
+    background-color: rgb(57, 184, 104);
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 8px;
+}
